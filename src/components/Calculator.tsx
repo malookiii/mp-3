@@ -91,8 +91,13 @@ export default function Calculator() {
         <div>
             <CalcWrapper>
             <CalcInput>
-            <input type="text" value={first} onChange={(e) => setFirst(e.target.value)}/>
-            <input type="text" value={second} onChange={(e) => setSecond(e.target.value)}/>
+                <label>First Number:
+                    <input type="text" value={first} onChange={(e) => setFirst(e.target.value)}/>
+                </label>
+                <label>Second Number:
+                    <input type="text" value={second} onChange={(e) => setSecond(e.target.value)}/>
+                </label>
+
             </CalcInput>
             <CalcButtons>
             <button onClick={addition}>+</button>
